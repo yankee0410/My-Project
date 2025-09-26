@@ -1,11 +1,16 @@
-from flask import Flask
+from datetime import datetime
+
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return 'Hello World'
 
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
+@app.route("/")
+def index():
+    """Render the landing page for the demo site."""
+    current_year = datetime.now().year
+    return render_template("index.html", year=current_year)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
