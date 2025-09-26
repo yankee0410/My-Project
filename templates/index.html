@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask 範例網站</title>
+    <style>
+      body {
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+        margin: 0;
+        background: #f4f4f7;
+        color: #2d2d2d;
+      }
+      header {
+        background: linear-gradient(135deg, #6c63ff, #7ad5ff);
+        color: #fff;
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+      }
+      main {
+        max-width: 720px;
+        margin: -2rem auto 0;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
+        padding: 2.5rem;
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.08em;
+      }
+      p {
+        line-height: 1.8;
+        font-size: 1.05rem;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.75rem;
+        background: #6c63ff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.75rem 1.5rem rgba(108, 99, 255, 0.35);
+      }
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        color: #6b6b6b;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>歡迎來到 Flask 範例網站</h1>
+      <p>這個小網站示範如何建立簡單的 Flask 應用程式。</p>
+    </header>
+    <main>
+      <h2>我們做了什麼？</h2>
+      <p>
+        Flask 是一個輕量級的 Python Web 框架。透過簡單的程式碼，你就能建立路由、渲染模板，甚至連接資料庫。
+        這個範例頁面展示了如何把資料傳進模板，在頁面上呈現動態內容。
+      </p>
+      <p>
+        你可以開始擴充這個專案，加上新的頁面、表單或 API。Flask 的設計非常靈活，適合快速原型開發與教學示範。
+      </p>
+      <a class="cta" href="https://flask.palletsprojects.com/" target="_blank" rel="noopener">深入了解 Flask</a>
+    </main>
+    <footer>
+      &copy; {{ year }} Flask Demo. 保留所有權利。
+    </footer>
+  </body>
+</html>
